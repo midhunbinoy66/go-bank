@@ -3,5 +3,8 @@ package main
 import "fmt"
 
 func main(){
-	fmt.Println("Hello go")
+	server := NewApiServer(":3000")
+	server.Run()
+	fmt.Print("server is created")
+
 }
